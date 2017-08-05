@@ -1,0 +1,15 @@
+# Ignores compiled TypeScript files
+**/app/**/*.map
+**/app/**/*.js
+**/Scripts/**/*.module.js
+**/Scripts/**/*.module.js.map
+**/Scripts/**/*.routing.js.map
+**/Scripts/**/*.routing.js.map
+**/Scripts/**/*.service.js
+**/Scripts/**/*.service.js.map
+**/Scripts/**/*.component.js
+**/Scripts/**/*.component.js.map
+node_modules/
+bin/
+obj/
+/packages/

@@ -1,0 +1,112 @@
+<!-- #END# Page Loader -->
+<!-- Overlay For Sidebars -->
+<div class="overlay"></div>
+<!-- #END# Overlay For Sidebars -->
+<!-- Top Bar -->
+<nav class="navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="javascript:void(0);" class="bars"></a>
+            <a class="navbar-brand" href="../index.html">BINOCULARS</a>
+        </div>
+    </div>
+</nav>
+<!-- #Top Bar -->
+<section>
+    <!-- Left Sidebar -->
+    <aside id="leftsidebar" class="sidebar">
+        <!-- User Info -->
+        <div class="user-info">
+            <div class="image">
+                <img src="../images/user.png" width="48" height="48" alt="User" />
+            </div>
+            <div class="info-container">
+                <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sawangchai Saroj</div>
+                <div class="email">sawangcs@ais.co.th</div>
+                <div class="btn-group user-helper-dropdown">
+                    <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
+                    <ul class="dropdown-menu pull-right">
+                        <li><a href="javascript:void(0);"><i class="material-icons">person</i>Profile</a></li>
+                        <li role="seperator" class="divider"></li>
+                        <li><a href="javascript:void(0);"><i class="material-icons">settings</i>Settings</a></li>
+                        <li role="seperator" class="divider"></li>
+                        <li><a href="javascript:void(0);"><i class="material-icons">input</i>Sign Out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- #User Info -->
+        <!-- Menu -->
+        <div class="menu">
+            <ul class="list">
+                <li class="header">MAIN NAVIGATION</li>
+                <li class="active">
+                    <a [routerLink]="['home']">
+                        <i class="material-icons">home</i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="['logviewer']">
+                        <i class="material-icons">folder</i>
+                        <span>Log Files</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" class="menu-toggle">
+                        <i class="material-icons">storage</i>
+                        <span>Database</span>
+                    </a>
+                    <ul class="ml-menu">
+                        <li>
+                            <a href="../pages/binoculars/data-query.html">SQL</a>
+                        </li>
+                        <li>
+                            <a href="../../pages/binoculars/data-management.html">Data Management</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" class="menu-toggle">
+                        <i class="material-icons">settings_applications</i>
+                        <span>Admin</span>
+                    </a>
+                    <ul class="ml-menu">
+                        <li>
+                            <a href="../pages/binoculars/admin-system-management.html">System Management</a>
+                        </li>
+                        <li>
+                            <a href="../pages/binoculars/admin-auth-management.html">Authority Management</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="../pages/binoculars/admin-audittrail-report.html">
+                        <i class="material-icons">update</i>
+                        <span>Audit Trail Report</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <!-- #Menu -->
+        <!-- Footer -->
+        <div class="legal">
+            <div class="copyright">
+                &copy; 2017 <a href="javascript:void(0);">CBA - Binoculars</a>.
+            </div>
+            <div class="version">
+                <b>Version: </b> Demo
+            </div>
+        </div>
+        <!-- #Footer -->
+    </aside>
+    <!-- #END# Left Sidebar -->
+</section>
+
+<section class="content">
+    <div class="container-fluid">
+        <router-outlet></router-outlet>
+    </div>
+</section>
